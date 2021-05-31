@@ -1,0 +1,45 @@
+.p-m-latest {
+    &-block {
+        padding: 90px 0 80px;
+        @include screen-max($mobile) {
+            padding: 43px 56.5px 33px;
+        }
+    }
+    &-heading {
+        margin-bottom: 60px;
+        @include screen-max($mobile) {
+            margin-bottom: 32px;
+        }
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 240px);
+        grid-gap: 50px 40px;
+        @include screen-max($mobile) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-gap: 0px;
+        }
+        &__item {
+            max-width: 240px;
+            width: 100%;
+            @include screen-max($mobile) {
+                max-width: 320px;
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:not(:nth-last-child(-n+4)) {
+                    display: none;
+                }
+            }
+            &-size {
+                margin-top: 10px;
+                @include screen-max($mobile) {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

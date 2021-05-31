@@ -1,0 +1,22 @@
+.p-pl-header-body {
+    &-background {
+        padding: 75px 0;
+        background-color: #edc957;
+        background-image: url('../images/products-list/header-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        @include screen-max($mobile) {
+            padding-bottom: 45px;
+            background-size: cover;
+        }
+    }
+    &-filter {
+        margin-top: 30px;
+        display: none;
+        @include screen-max($mobile) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

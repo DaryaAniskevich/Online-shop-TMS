@@ -1,0 +1,44 @@
+.c-slider {
+    position: relative;
+    &-images {
+        display: flex;
+        &--small {
+            max-width: 580px;
+            width: 100%;
+            @include screen-max($mobile) {
+                max-width: 283px;
+                width: 100%;
+            }
+        }
+        &--other {
+            @include screen-max($mobile) {
+                max-width: 320px;
+                width: 100%;
+            }
+        }
+        &__item {
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &--small {
+                max-width: 85px;
+                width: 100%;
+                height: 72px;
+                object-fit: cover;
+                filter: brightness(0.9) opacity(40%);
+                margin-right: 14px;
+                @include screen-max($mobile) {
+                    &:nth-of-type(3) {
+                        margin-right: 0;
+                    }
+                    &:not(:nth-of-type(-n+3)) {
+                        display: none;
+                    }
+                }
+            }
+            &--active {
+                filter: brightness(1) opacity(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+    .navigation {
+        display: flex;
+        align-items: center;
+        &__item {
+            @include header-text-styles;
+            text-decoration: none;
+            margin-right: 41px;
+            &:last-child {
+                margin-right: 0;
+            }
+            @include screen-max($mobile) {
+                margin-right: 0;
+            }
+        }
+    }

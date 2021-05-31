@@ -1,0 +1,31 @@
+.c-rewiews {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    &__grade {
+        color: $gold;
+        margin-right: 6px;
+    }
+    &-stars {
+        margin-right: 16px;
+        display: flex;
+        &__item {
+            margin-right: 3px;
+             :last-child {
+                margin-right: 0;
+            }
+            &--full {
+                fill: $gold;
+            }
+        }
+    }
+    &__rewiew {
+        color: $medium-gray;
+        &-link {
+            color: $medium-gray;
+        }
+    }
+}

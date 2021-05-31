@@ -1,0 +1,32 @@
+.c-button {
+    @include button-style;
+    color: $sky-color;
+    padding: 16px 46px;
+    background-color: $white-color;
+    border: none;
+    border-radius: 0;
+    &:hover {
+        box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.5);
+    }
+    &:focus {
+        outline: none;
+    }
+    &--transparent {
+        color: $white-color;
+        text-transform: uppercase;
+        padding: 15px 30px;
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid #FFFFFF;
+    }
+    &--rounded-transparent {
+        background: rgba(0, 0, 0, 0.2);
+        border: 2px solid $white-color;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: $white-color;
+        padding: 18px 38px;
+    }
+}

@@ -1,0 +1,42 @@
+.c-breadcrumbs {
+    border-top: 1px solid $lighest-gray;
+    border-bottom: 1px solid $lighest-gray;
+    padding: 25px 0;
+    width: 100%;
+    @include screen-max($mobile) {
+        padding-left: 52px;
+        padding-right: 52px;
+        font-weight: 600;
+    }
+    &__container {
+        max-width: 1322px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &-block {
+        display: flex;
+        align-items: center;
+        &__item {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: $almost-black;
+            margin-right: 13px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &--current {
+                color: $medium-gray;
+            }
+        }
+        &__arrow {
+            width: 7px;
+            height: 12px;
+            background-image: url('../images/products-list/breadcrumbs-arrow.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 13px;
+        }
+    }
+}

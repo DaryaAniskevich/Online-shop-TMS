@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: $almost-black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-wide {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+textarea {
+    appearance: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}

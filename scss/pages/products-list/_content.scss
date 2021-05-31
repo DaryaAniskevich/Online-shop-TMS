@@ -1,0 +1,146 @@
+.p-pl-content {
+    background-color: $pages-bg;
+    padding: 30px 0 53px;
+    @include screen-max($mobile) {
+        padding: 33px 46px;
+    }
+    &-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-filters {
+        @include screen-max($mobile) {
+            display: none;
+        }
+        &-item {
+            margin-bottom: 20px;
+            &__name {
+                margin-bottom: 24px;
+                &-price {
+                    margin-bottom: 58px;
+                }
+            }
+        }
+    }
+    &-gallery {
+        max-width: 960px;
+        width: 100%;
+        @include screen-max($mobile) {
+            margin: 0 auto;
+        }
+        &-sort {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            @include screen-max($mobile) {
+                margin-bottom: 22px;
+            }
+            &-buttons {
+                margin-left: auto;
+                @include screen-max($mobile) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-products {
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            grid-gap: 45px 40px;
+            margin-bottom: 62px;
+            @include screen-max($mobile) {
+                justify-items: center;
+                grid-gap: 40px;
+            }
+            &--list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-gap: 0;
+            }
+            &__item {
+                max-width: 320px;
+                width: 100%;
+                @include screen-max($mobile) {
+                    grid-gap: 40px;
+                }
+                &:not(:nth-child(-n+4)) {
+                    @include screen-max($mobile) {
+                        display: none;
+                    }
+                }
+                &--wide {
+                    position: relative;
+                    max-width: 955px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    @include screen-max($mobile) {
+                        max-width: 320px;
+                        width: 100%;
+                        margin-bottom: 40px;
+                    }
+                }
+                &-color {
+                    margin-top: 26px;
+                    margin-bottom: 17px;
+                    &--wide {
+                        @include screen-max($mobile) {
+                            margin-top: 10px;
+                            margin-bottom: 11px;
+                            justify-content: center;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+        &-pages {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-numbers {
+                margin: 0 19px;
+                display: none;
+                @include screen-max($mobile) {
+                    display: flex;
+                    align-items: center;
+                }
+                &__item {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 16px;
+                    letter-spacing: 0.2px;
+                    color: $medium-gray;
+                    &--active {
+                        color: $sky-color;
+                    }
+                    &--border {
+                        margin: 0;
+                    }
+                }
+            }
+            &__button {
+                margin-left: 17px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
+            &-dots {
+                margin: 0 14px;
+                @include screen-max($mobile) {
+                    display: none;
+                }
+                &__item {
+                    margin-right: 4px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

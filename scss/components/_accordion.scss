@@ -1,0 +1,89 @@
+.c-accordion {
+    width: 345px;
+    border: 1px solid $lighest-gray;
+    border-radius: 5px;
+    padding: 30px 0;
+    &-item {
+        padding: 0 35px 21px;
+        border-bottom: 1px solid $lighest-gray;
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        &:not(:first-child) {
+            padding-bottom: 21px;
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #252B42;
+    }
+    &__input {
+        display: none;
+        &:checked {
+            &~.c-accordion__button .c-accordion__icon {
+                background: #2091F9;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                color: #FFFFFF;
+            }
+            &~.c-accordion__list {
+                display: block;
+            }
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+    }
+    &__icon {
+        width: 25px;
+        height: 25px;
+        background-color: #F1F1F1;
+        border-radius: 28px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: $light-gray;
+        margin-left: auto;
+        &--active {
+            color: $white-color;
+            background: $sky-color;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__list {
+        display: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #E4E4E4;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: $medium-gray;
+        &-item {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: #737373;
+            &::before {
+                content: '-';
+                font-weight: inherit;
+                font-size: inherit;
+                line-height: inherit;
+                letter-spacing: inherit;
+                color: inherit;
+                margin-right: 5px;
+            }
+        }
+    }
+}

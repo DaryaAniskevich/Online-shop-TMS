@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html xmlns="//www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TMS Shop - Products List</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header header--page">
+      <div class="header__container">
+        <a href="#" class="c-logo header-logo"
+          ><img src="./images/products-list/logo-black.png" alt="Logo"
+        /></a>
+        <nav class="navigation header-navigation">
+          <a
+            href="./index.html"
+            class="
+              navigation__item
+              header-navigation__item header-navigation__item--page
+            "
+            >Home</a
+          >
+          <a
+            href="#"
+            class="
+              navigation__item
+              header-navigation__item header-navigation__item--page
+            "
+            >Shop</a
+          >
+          <a
+            href="#"
+            class="
+              navigation__item
+              header-navigation__item header-navigation__item--page
+            "
+            >Account</a
+          >
+          <a
+            href="#"
+            class="
+              navigation__item
+              header-navigation__item header-navigation__item--page
+            "
+            >Pages</a
+          >
+          <a
+            href="#"
+            class="
+              navigation__item
+              header-navigation__item header-navigation__item--page
+            "
+            >Blog</a
+          >
+        </nav>
+        <div class="c-user header-user">
+          <a
+            href="#"
+            class="c-user__account c-user__account--page header-user__account"
+          >
+            <div
+              class="
+                c-user__account-icon c-user__account-icon--page
+                header-user__account-icon
+              "
+            ></div>
+            <span
+              class="
+                c-user__account-identify c-user__account-identify--page
+                header-user__account-identify
+              "
+              >My Account</span
+            >
+          </a>
+          <a
+            href="#"
+            class="
+              c-favorite c-favorite--page
+              c-user__favorite
+              header-user__favorite
+            "
+          ></a>
+          <a
+            href="#"
+            class="c-user__basket c-user__basket--page header-user__basket"
+          >
+            <div class="c-user__basket-amount header-user__basket-amount">
+              1
+            </div>
+          </a>
+        </div>
+        <button class="c-burger-button header-burger">
+          <img src="./images/products-list/burger-black.svg" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="c-breadcrumbs">
+        <div class="c-breadcrumbs-block c-breadcrumbs__container">
+          <a class="c-breadcrumbs-block__item" href="./index.html">Home</a>
+          <div class="c-breadcrumbs-block__arrow"></div>
+          <a
+            class="c-breadcrumbs-block__item c-breadcrumbs-block__item--current"
+            href="#"
+            >Fashion</a
+          >
+        </div>
+      </div>
+      <div class="p-pl-header-body-background">
+        <div class="container-wide">
+          <div class="c-header-body">
+            <p class="c-header-body__season">SUMMER 2020</p>
+            <h1 class="c-header-body__heading">Fashion</h1>
+            <p class="c-header-body__description">
+              Find The Perfect style for you
+            </p>
+          </div>
+          <div class="p-pl-header-body-filter">
+            <form
+              class="
+                c-sort-block-form c-sort-block-form--filter
+                p-pl-header-body-filter-form
+              "
+              action="#"
+              method="get"
+              name="filters"
+            >
+              <select
+                class="
+                  c-sort-block-form__select c-sort-block-form__select--filter
+                "
+                id="sort-select"
+                size="1"
+                placeholder="Filter"
+              >
+                <option
+                  class="
+                    c-sort-block-form__option c-sort-block-form__option--filter
+                  "
+                  value="Filter"
+                >
+                  Filter
+                </option>
+                <option
+                  class="
+                    c-sort-block-form__option c-sort-block-form__option--filter
+                  "
+                  value="Category"
+                >
+                  Category
+                </option>
+                <option
+                  class="
+                    c-sort-block-form__option c-sort-block-form__option--filter
+                  "
+                  value="Color"
+                >
+                  Color
+                </option>
+                <option
+                  class="
+                    c-sort-block-form__option c-sort-block-form__option--filter
+                  "
+                  value="Size"
+                >
+                  Size
+                </option>
+                <option
+                  class="
+                    c-sort-block-form__option c-sort-block-form__option--filter
+                  "
+                  value="Price"
+                >
+                  Price
+                </option>
+                <option
+                  class="
+                    c-sort-block-form__option c-sort-block-form__option--filter
+                  "
+                  value="Brand"
+                >
+                  Brand
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="p-pl-content">
+        <div class="container-wide p-pl-content-grid">
+          <section class="c-filters p-pl-content-filters">
+            <form class="c-filters-form" action="#" method="get" name="filters">
+              <div class="p-pl-content-filters-item c-filters-form-search">
+                <input
+                  class="
+                    c-filters-form-search__input
+                    p-pl-content-filters__search
+                  "
+                  type="search"
+                  placeholder="Search for products"
+                />
+                <button class="c-filters-form-search__button" type="submit">
+                  <img src="./images/products-list/search-icon.png" />
+                </button>
+              </div>
+              <div class="p-pl-content-filters-item c-filters-form-block">
+                <ul class="c-filters-form-category">
+                  <li class="c-filters-form-category__item">
+                    <div class="c-filters-form-category__head">
+                      <div class="c-filters-form__title">Accessories</div>
+                      <button
+                        class="
+                          c-filters-form-category__button
+                          c-filters-form-category__button--active
+                        "
+                      >
+                        +
+                      </button>
+                    </div>
+                    <ul class="c-filters-form-category__subitem">
+                      <li class="c-filters-form__subtitle">
+                        <a href="#" class="c-filters-form__subtitle-link"
+                          >View All</a
+                        >
+                      </li>
+                      <li class="c-filters-form__subtitle">
+                        <a href="#" class="c-filters-form__subtitle-link"
+                          >Bags</a
+                        >
+                      </li>
+                      <li class="c-filters-form__subtitle">
+                        <a href="#" class="c-filters-form__subtitle-link"
+                          >Belts</a
+                        >
+                      </li>
+                      <li class="c-filters-form__subtitle">
+                        <a href="#" class="c-filters-form__subtitle-link"
+                          >Cosmetics</a
+                        >
+                      </li>
+                      <li class="c-filters-form__subtitle">
+                        <a href="#" class="c-filters-form__subtitle-link"
+                          >Hats</a
+                        >
+                      </li>
+                      <li class="c-filters-form__subtitle">
+                        <a href="#" class="c-filters-form__subtitle-link"
+                          >Jewelry</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="c-filters-form-category__item">
+                    <div class="c-filters-form-category__head">
+                      <div class="c-filters-form__title">Bags</div>
+                      <button class="c-filters-form-category__button">+</button>
+                    </div>
+                  </li>
+                  <li class="c-filters-form-category__item">
+                    <div class="c-filters-form-category__head">
+                      <div class="c-filters-form__title">Clothing</div>
+                      <button class="c-filters-form-category__button">+</button>
+                    </div>
+                  </li>
+                  <li class="c-filters-form-category__item">
+                    <div class="c-filters-form-category__head">
+                      <div class="c-filters-form__title">Entertainement</div>
+                      <button class="c-filters-form-category__button">+</button>
+                    </div>
+                  </li>
+                  <li class="c-filters-form-category__item">
+                    <div class="c-filters-form-category__head">
+                      <div class="c-filters-form__title">Furniture & Decor</div>
+                      <button class="c-filters-form-category__button">+</button>
+                    </div>
+                  </li>
+                  <li class="c-filters-form-category__item">
+                    <div class="c-filters-form-category__head">
+                      <div class="c-filters-form__title">Gadgets</div>
+                      <button class="c-filters-form-category__button">+</button>
+                    </div>
+                  </li>
+                  <li class="c-filters-form-category__item">
+                    <div class="c-filters-form-category__head">
+                      <div class="c-filters-form__title">Shoes</div>
+                      <button class="c-filters-form-category__button">+</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="p-pl-content-filters-item c-filters-form-block">
+                <div
+                  class="c-filters-form__title p-pl-content-filters-item__name"
+                >
+                  Color
+                </div>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="color"
+                    value="red"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Red</div>
+                  <div class="c-filters-form__amount">103</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="color"
+                    value="blue"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Blue</div>
+                  <div class="c-filters-form__amount">23</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="color"
+                    value="brown"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Brown</div>
+                  <div class="c-filters-form__amount">12</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="color"
+                    value="orange"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Orange</div>
+                  <div class="c-filters-form__amount">22</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="color"
+                    value="yellow"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Yellow</div>
+                  <div class="c-filters-form__amount">11</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="color"
+                    value="pink"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Pink</div>
+                  <div class="c-filters-form__amount">22</div>
+                </label>
+              </div>
+              <div class="p-pl-content-filters-item c-filters-form-block">
+                <div
+                  class="c-filters-form__title p-pl-content-filters-item__name"
+                >
+                  Size
+                </div>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="size"
+                    value="xl"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Extra Large</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="size"
+                    value="l"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Large</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="size"
+                    value="m"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Medium</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="size"
+                    value="s"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Small</div>
+                </label>
+                <label class="c-radio">
+                  <input
+                    class="c-radio-input"
+                    type="radio"
+                    name="size"
+                    value="xs"
+                  />
+                  <div class="c-radio-icon"></div>
+                  <div class="c-filters-form__subtitle">Extra Small</div>
+                </label>
+              </div>
+              <div class="p-pl-content-filters-item c-filters-form-block">
+                <div
+                  class="
+                    c-filters-form__title
+                    p-pl-content-filters-item__name
+                    p-pl-content-filters-item__name-price
+                  "
+                >
+                  Filter by price
+                </div>
+                <div class="c-filters-form-price-range">
+                  <div class="c-filters-form-price-range-box">
+                    <div
+                      class="
+                        c-filters-form-price-range-box__item
+                        c-filters-form-price-range-box__item--low
+                      "
+                    >
+                      15
+                    </div>
+                    <div
+                      class="
+                        c-filters-form-price-range-box__item
+                        c-filters-form-price-range-box__item--high
+                      "
+                    >
+                      250
+                    </div>
+                  </div>
+                  <div
+                    class="
+                      c-filters-form-price-range__item
+                      c-filters-form-price-range__item-noselected
+                    "
+                  ></div>
+                  <div
+                    class="
+                      c-filters-form-price-range__item
+                      c-filters-form-price-range__item-price
+                      c-filters-form-price-range__item-price--low
+                    "
+                  >
+                    ||
+                  </div>
+                  <div
+                    class="
+                      c-filters-form-price-range__item
+                      c-filters-form-price-range__item-selected
+                    "
+                  ></div>
+                  <div
+                    class="
+                      c-filters-form-price-range__item
+                      c-filters-form-price-range__item-price
+                      c-filters-form-price-range__item-price--high
+                    "
+                  >
+                    ||
+                  </div>
+                  <div
+                    class="
+                      c-filters-form-price-range__item
+                      c-filters-form-price-range__item-noselected
+                    "
+                  ></div>
+                </div>
+                <div class="c-filters-form-price-selected">
+                  <div class="c-filters-form-price-selected__item">15$</div>
+                  <div class="c-filters-form-price-selected__item">250$</div>
+                </div>
+              </div>
+              <div class="p-pl-content-filters-item c-filters-form-block">
+                <div
+                  class="c-filters-form__title p-pl-content-filters-item__name"
+                >
+                  Brand
+                </div>
+                <label class="c-checkbox">
+                  <input
+                    class="c-checkbox-input"
+                    type="checkbox"
+                    name="brand"
+                    value="Adidas"
+                  />
+                  <div class="c-checkbox-icon"></div>
+                  <div class="c-filters-form__subtitle">Adidas</div>
+                  <div class="c-filters-form__amount">11</div>
+                </label>
+                <label class="c-checkbox">
+                  <input
+                    class="c-checkbox-input"
+                    type="checkbox"
+                    name="brand"
+                    value="Armani"
+                  />
+                  <div class="c-checkbox-icon"></div>
+                  <div class="c-filters-form__subtitle">Armani</div>
+                  <div class="c-filters-form__amount">23</div>
+                </label>
+                <label class="c-checkbox">
+                  <input
+                    class="c-checkbox-input"
+                    type="checkbox"
+                    name="brand"
+                    value="Calvin Klein"
+                  />
+                  <div class="c-checkbox-icon"></div>
+                  <div class="c-filters-form__subtitle">Calvin Klein</div>
+                  <div class="c-filters-form__amount">12</div>
+                </label>
+                <label class="c-checkbox">
+                  <input
+                    class="c-checkbox-input"
+                    type="checkbox"
+                    name="brand"
+                    value="Columbia"
+                  />
+                  <div class="c-checkbox-icon"></div>
+                  <div class="c-filters-form__subtitle">Columbia</div>
+                  <div class="c-filters-form__amount">04</div>
+                </label>
+                <label class="c-checkbox">
+                  <input
+                    class="c-checkbox-input"
+                    type="checkbox"
+                    name="brand"
+                    value="Converse"
+                  />
+                  <div class="c-checkbox-icon"></div>
+                  <div class="c-filters-form__subtitle">Converse</div>
+                  <div class="c-filters-form__amount">22</div>
+                </label>
+                <label class="c-checkbox">
+                  <input
+                    class="c-checkbox-input"
+                    type="checkbox"
+                    name="brand"
+                    value="Dockers"
+                  />
+                  <div class="c-checkbox-icon"></div>
+                  <div class="c-filters-form__subtitle">Dockers</div>
+                  <div class="c-filters-form__amount">103</div>
+                </label>
+              </div>
+            </form>
+          </section>
+          <section class="p-pl-content-gallery">
+            <div class="p-pl-content-gallery-sort">
+              <form
+                class="c-sort-block-form p-pl-content-gallery-sort-form"
+                action="#"
+                method="get"
+                name="sort"
+              >
+                <label
+                  class="
+                    c-sort-block-form__label
+                    p-pl-content-gallery-sort-form__label
+                  "
+                  for="sort-select"
+                  >Sort by :</label
+                >
+                <select
+                  class="
+                    c-sort-block-form__select
+                    p-pl-content-gallery-sort-form__select
+                  "
+                  id="sort-select"
+                  size="1"
+                >
+                  <option
+                    class="c-sort-block-form__option"
+                    value="popularity"
+                    selected
+                  >
+                    Popularity
+                  </option>
+                  <option class="c-sort-block-form__option" value="new">
+                    What's new
+                  </option>
+                  <option class="c-sort-block-form__option" value="to-low">
+                    Price to low
+                  </option>
+                  <option class="c-sort-block-form__option" value="to-high">
+                    Price to high
+                  </option>
+                </select>
+              </form>
+              <div class="p-pl-content-gallery-sort-buttons c-display-mode">
+                <a href="./catalog.html"
+                  ><button
+                    class="c-display-mode__item c-display-mode__item-gallery"
+                  ></button
+                ></a>
+                <button
+                  class="
+                    c-display-mode__item
+                    c-display-mode__item-list
+                    c-display-mode__item--active
+                  "
+                ></button>
+              </div>
+            </div>
+            <div class="p-pl-content-products p-pl-content-products--wide">
+              <div
+                class="
+                  p-pl-content-products-list p-pl-content-products-list--list
+                "
+              >
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw1.jpg"
+                    />
+                  </div>
+                  <div
+                    class="
+                      c-product-card-description
+                      c-product-card-description--wide
+                    "
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw2.jpg"
+                    />
+                  </div>
+                  <div
+                    class="
+                      c-product-card-description
+                      c-product-card-description--wide
+                    "
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw3.jpg"
+                    />
+                  </div>
+                  <div
+                    class="c-product-card-sidebar c-product-card-sidebar--wide"
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw4.jpg"
+                    />
+                  </div>
+                  <div
+                    class="
+                      c-product-card-description
+                      c-product-card-description--wide
+                    "
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw5.jpg"
+                    />
+                  </div>
+                  <div
+                    class="
+                      c-product-card-description
+                      c-product-card-description--wide
+                    "
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw6.jpg"
+                    />
+                  </div>
+                  <div
+                    class="
+                      c-product-card-description
+                      c-product-card-description--wide
+                    "
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw7.jpg"
+                    />
+                  </div>
+                  <div
+                    class="
+                      c-product-card-description
+                      c-product-card-description--wide
+                    "
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+                <div
+                  class="
+                    c-product-card c-product-card--wide
+                    p-pl-content-products-list__item
+                    p-pl-content-products-list__item--wide
+                  "
+                >
+                  <div class="c-product-card-image c-product-card-image--wide">
+                    <img
+                      class="
+                        c-product-card-image__item
+                        c-product-card-image__item--wide
+                      "
+                      src="./images/products-list/itemw8.jpg"
+                    />
+                  </div>
+                  <div
+                    class="
+                      c-product-card-description
+                      c-product-card-description--wide
+                    "
+                  >
+                    <div
+                      class="
+                        c-product-card-title-block
+                        c-product-card-title-block--wide
+                      "
+                    >
+                      <div
+                        class="
+                          c-product-card-title-block__title
+                          c-product-card-title-block__title--wide
+                          c-product-card-title-block__title--small
+                        "
+                      >
+                        Men's Essential Tee
+                      </div>
+                      <div
+                        class="
+                          c-product-card-title-block__subtitle
+                          c-product-card-title-block__subtitle--small
+                        "
+                      >
+                        (Black)
+                      </div>
+                    </div>
+                    <div
+                      class="c-product-card__price c-product-card__price--small"
+                    >
+                      $32.00
+                    </div>
+                    <div
+                      class="
+                        c-color c-product-card-colors
+                        p-pl-content-products-list__item-color
+                        p-pl-content-products-list__item-color--wide
+                      "
+                    >
+                      <button
+                        class="c-color__item c-color__item-blue"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-green"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-orange"
+                        type="button"
+                      ></button>
+                      <button
+                        class="c-color__item c-color__item-black"
+                        type="button"
+                      ></button>
+                    </div>
+                    <div class="c-product-card-size c-product-card-size--wide">
+                      <div class="c-product-card-size__item">XL</div>
+                      <div class="c-product-card-size__item">L</div>
+                      <div class="c-product-card-size__item">M</div>
+                      <div class="c-product-card-size__item">S</div>
+                    </div>
+                  </div>
+                  <button
+                    class="
+                      c-favorite
+                      c-product-card__favorite c-product-card__favorite--wide
+                    "
+                    type="button"
+                  ></button>
+                </div>
+              </div>
+              <div class="p-pl-content-products-pages">
+                <button
+                  class="
+                    c-slider-button
+                    c-slider-button--left
+                    c-slider-button__pages
+                    c-slider-button__pages--left
+                    p-pl-content-products-pages__button
+                  "
+                ></button>
+                <div class="p-pl-content-products-pages-numbers">
+                  <div
+                    class="
+                      p-pl-content-products-pages-numbers__item
+                      p-pl-content-products-pages-numbers__item--active
+                    "
+                  >
+                    1
+                  </div>
+                  <div
+                    class="
+                      p-pl-content-products-pages-numbers__item
+                      p-pl-content-products-pages-numbers__item--border
+                    "
+                  >
+                    |
+                  </div>
+                  <div class="p-pl-content-products-pages-numbers__item">
+                    10
+                  </div>
+                </div>
+                <button
+                  class="
+                    c-slider-button
+                    c-slider-button__pages
+                    c-slider-button__pages-number
+                    c-slider-button__pages--active
+                    p-pl-content-products-pages__button
+                  "
+                >
+                  1
+                </button>
+                <button
+                  class="
+                    c-slider-button
+                    c-slider-button__pages
+                    c-slider-button__pages-number
+                    p-pl-content-products-pages__button
+                  "
+                >
+                  2
+                </button>
+                <button
+                  class="
+                    c-slider-button
+                    c-slider-button__pages
+                    c-slider-button__pages-number
+                    p-pl-content-products-pages__button
+                  "
+                >
+                  3
+                </button>
+                <button
+                  class="
+                    c-slider-button
+                    c-slider-button__pages
+                    c-slider-button__pages-number
+                    p-pl-content-products-pages__button
+                  "
+                >
+                  4
+                </button>
+                <button
+                  class="
+                    c-slider-button
+                    c-slider-button__pages
+                    c-slider-button__pages-number
+                    p-pl-content-products-pages__button
+                  "
+                >
+                  5
+                </button>
+                <div class="c-slider-dots p-pl-content-products-pages-dots">
+                  <div
+                    class="
+                      c-slider-dots__item c-slider-dots__item--small
+                      p-pl-content-products-pages-dots__item
+                    "
+                  ></div>
+                  <div
+                    class="
+                      c-slider-dots__item c-slider-dots__item--small
+                      p-pl-content-products-pages-dots__item
+                    "
+                  ></div>
+                  <div
+                    class="
+                      c-slider-dots__item c-slider-dots__item--small
+                      p-pl-content-products-pages-dots__item
+                    "
+                  ></div>
+                </div>
+                <button
+                  class="
+                    c-slider-button
+                    c-slider-button--right
+                    c-slider-button__pages
+                    c-slider-button__pages--right
+                    c-slider-button__pages--right-active
+                    p-pl-content-products-pages__button
+                  "
+                ></button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="c-logo footer-logo"
+          ><img class="" src="./images/logo.png" alt="Logo"
+        /></a>
+        <nav class="navigation footer-navigation">
+          <a
+            href="./index.html"
+            class="
+              navigation__item
+              footer-navigation__item footer-navigation__item--active
+            "
+            >Home</a
+          >
+          <a href="#" class="navigation__item footer-navigation__item">Shop</a>
+          <a href="#" class="navigation__item footer-navigation__item"
+            >Account</a
+          >
+          <a href="#" class="navigation__item footer-navigation__item">Pages</a>
+          <a href="#" class="navigation__item footer-navigation__item">Blog</a>
+          <a href="#" class="navigation__item footer-navigation__item"
+            >Docs / Components</a
+          >
+        </nav>
+        <div class="footer-social">
+          <a class="footer-social__item" href="https://twitter.com/"
+            ><img src="./images/tw.svg"
+          /></a>
+          <a class="footer-social__item" href="https://www.facebook.com/"
+            ><img src="./images/fb.svg"
+          /></a>
+          <a class="footer-social__item" href="https://www.linkedin.com/"
+            ><img src="./images/ln.svg"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

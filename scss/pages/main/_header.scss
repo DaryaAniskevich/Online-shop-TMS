@@ -1,0 +1,25 @@
+.p-m-header {
+    &-background {
+        background-color: #000000;
+        background-image: url('../images/main_header_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include screen-max($mobile) {
+            background-position: center bottom;
+        }
+    }
+    &-body {
+        padding-top: 172px;
+        padding-bottom: 134px;
+        @include screen-max($mobile) {
+            padding-top: 217px;
+            padding-bottom: 180px;
+        }
+    }
+    &-button {
+        margin-top: 31px;
+        @include screen-max($mobile) {
+            margin-top: 33px;
+        }
+    }
+}

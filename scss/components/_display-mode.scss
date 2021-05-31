@@ -1,0 +1,28 @@
+.c-display-mode {
+    display: flex;
+    &__item {
+        width: 51.29px;
+        height: 51px;
+        background-color: $white-color;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        padding: 13px;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: center;
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--active {
+            background-color: #E9E9E9;
+        }
+        &-gallery {
+            background-image: url('../images/products-list/gallery-mode.svg');
+        }
+        &-list {
+            background-image: url('../images/products-list/list-mode.svg');
+        }
+    }
+}

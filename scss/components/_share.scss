@@ -1,0 +1,18 @@
+.c-share {
+    &-icons {
+        display: flex;
+        &__item {
+            display: flex;
+            width: 48.71px;
+            height: 48.71px;
+            margin-right: 13px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &-link {
+                width: 48.71px;
+                height: 48.71px;
+            }
+        }
+    }
+}

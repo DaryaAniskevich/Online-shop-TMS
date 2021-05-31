@@ -1,0 +1,82 @@
+.p-m-instagram {
+    background-color: $dark-blue;
+    padding: 56px 0 49px;
+    @include screen-max($mobile) {
+        padding: 67px 12px;
+    }
+    &-heading {
+        font-size: 40px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        color: $white-color;
+        text-align: center;
+        margin-bottom: 69px;
+        @include screen-max($mobile) {
+            display: block;
+            max-width: 218px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 72px;
+        }
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        flex-shrink: 0;
+        overflow: hidden;
+        margin-bottom: 45px;
+        @include screen-max($mobile) {
+            max-width: 409px;
+            width: 100%;
+            padding: 0 12px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+        &-item {
+            max-width: 349px;
+            width: 100%;
+            margin-right: 31px;
+            position: relative;
+            &:last-child {
+                margin-right: 0;
+            }
+            @include screen-max($mobile) {
+                max-width: 409px;
+                width: 100%;
+            }
+            &__image {
+                width: 349px;
+                height: 249px;
+            }
+            &__button {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+                z-index: 1;
+            }
+        }
+    }
+    &-slider {
+        display: flex;
+        justify-content: center;
+        &__button {
+            @include screen-max($mobile) {
+                display: none;
+            }
+        }
+        &-dots {
+            margin: 0 34px;
+            &__item {
+                &--hidden {
+                    display: none;
+                    @include screen-max($mobile) {
+                        display: flex;
+                    }
+                }
+                &--active {
+                    background: $water-color;
+                }
+            }
+        }
+    }
+}

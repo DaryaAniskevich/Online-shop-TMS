@@ -1,0 +1,30 @@
+.c-radio {
+    display: flex;
+    align-items: bottom;
+    margin-bottom: 18px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 16px;
+        background-color: transparent;
+        border: 2px solid $checkbox-radio-color;
+        margin-right: 15px;
+        &:hover {
+            border: 2px solid $sky-color;
+        }
+    }
+    &-input {
+        display: none;
+        &:checked {
+            +.c-radio-icon {
+                border: 5px solid $sky-color;
+            }
+        }
+    }
+}

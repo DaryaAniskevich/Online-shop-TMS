@@ -1,0 +1,10 @@
+.c-favorite {
+    display: block;
+    background-image: url('../images/favorite.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &--page {
+        background-image: url('../images/products-list/favorite-black.png');
+    }
+}
