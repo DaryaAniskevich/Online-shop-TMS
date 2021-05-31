@@ -1,66 +1,66 @@
 .header {
-    padding-top: 36px;
-    &--page {
-        padding-top: 22px;
-        padding-bottom: 28px;
-    }
+  padding-top: 36px;
+  &--page {
+    padding-top: 22px;
+    padding-bottom: 28px;
+  }
+  @include screen-max($mobile) {
+    padding-top: 18px;
+  }
+  &__container {
+    @include head-foot-container;
+    display: flex;
+    align-items: center;
     @include screen-max($mobile) {
-        padding-top: 18px;
+      padding: 0 25px;
     }
-    &__container {
-        @include head-foot-container;
-        display: flex;
-        align-items: center;
-        @include screen-max($mobile) {
-            padding: 0 25px;
-        }
+  }
+  &-logo {
+    margin-right: 52px;
+    @include screen-max($mobile) {
+      margin-right: 10px;
     }
-    &-logo {
-        margin-right: 52px;
-        @include screen-max($mobile) {
-            margin-right: 90px;
+  }
+  &-navigation {
+    &__item {
+      color: $white-color;
+      &:hover {
+        border-bottom: 1px solid $white-color;
+        margin-bottom: -1px;
+      }
+      &:active {
+        opacity: 0.6;
+        border: none;
+      }
+      &--page {
+        color: $medium-gray;
+        &:hover {
+          color: $almost-black;
+          border-bottom: 1px solid $almost-black;
         }
+      }
+      @include screen-max($mobile) {
+        display: none;
+      }
     }
-    &-navigation {
-        &__item {
-            color: $white-color;
-            &:hover {
-                border-bottom: 1px solid $white-color;
-                margin-bottom: -1px;
-            }
-            &:active {
-                opacity: 0.6;
-                border: none;
-            }
-            &--page {
-                color: $medium-gray;
-                &:hover {
-                    color: $almost-black;
-                    border-bottom: 1px solid $almost-black;
-                }
-            }
-            @include screen-max($mobile) {
-                display: none;
-            }
-        }
+  }
+  &-user {
+    margin-left: auto;
+    &__account {
+      @include screen-max($mobile) {
+        display: none;
+      }
     }
-    &-user {
-        margin-left: auto;
-        &__account {
-            @include screen-max($mobile) {
-                display: none;
-            }
-        }
-        &__favorite {
-            @include screen-max($mobile) {
-                display: none;
-            }
-        }
+    &__favorite {
+      @include screen-max($mobile) {
+        display: none;
+      }
     }
-    &-burger {
-        margin-left: 20px;
-        @include screen-max($mobile) {
-            display: block;
-        }
+  }
+  &-burger {
+    margin-left: 20px;
+    @include screen-max($mobile) {
+      display: block;
     }
+  }
 }
