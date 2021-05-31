@@ -1,61 +1,68 @@
 .c-user {
+  display: flex;
+  align-items: center;
+  &__account {
+    color: $white-color;
+    font-weight: 600;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    &__account {
-        color: $white-color;
-        font-weight: 600;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        margin-right: 43px;
-        &--page {
-            color: $almost-black;
-        }
-        &-icon {
-            @include account-icons;
-            background-size: 24px 27px;
-            @include account-icons-main;
-            background-image: url('../images/account.svg');
-            margin-right: 12px;
-            &--page {
-                background-image: url('../images/products-list/account-black.svg');
-                @include account-icons-page;
-            }
-        }
-        &-identify {
-            @include header-text-styles;
-        }
+    margin-right: 43px;
+    &--page {
+      color: $almost-black;
     }
-    &__favorite {
-        background-size: 28.01px 25px;
-        width: 30px;
-        height: 27px;
-        margin-right: 38px;
+    &-icon {
+      @include account-icons;
+      background-size: 24px 27px;
+      @include account-icons-main;
+      background-image: url("../images/account.svg");
+      margin-right: 12px;
+      &--page {
+        background-image: url("../images/products-list/account-black.svg");
+        @include account-icons-page;
+      }
     }
-    &__basket {
-        @include account-icons;
-        position: relative;
-        background-size: 23px 22px;
-        @include account-icons-main;
-        background-image: url('../images/basket.svg');
-        &--page {
-            background-image: url('../images/products-list/basket-black.svg');
-            @include account-icons-page;
-        }
-        &-amount {
-            @include header-text-styles;
-            line-height: 20px;
-            font-size: 10px;
-            color: $white-color;
-            background-color: $sky-color;
-            min-width: 19px;
-            min-height: 19px;
-            border-radius: 42px;
-            padding: 0 8px;
-            position: absolute;
-            left: 41px;
-            top: -2px;
-            text-align: center;
-        }
+    &-identify {
+      @include header-text-styles;
     }
+  }
+  &__favorite {
+    background-size: 28.01px 25px;
+    width: 30px;
+    height: 27px;
+    margin-right: 38px;
+  }
+  &__basket {
+    @include account-icons;
+    position: relative;
+    background-size: 23px 22px;
+    @include account-icons-main;
+    background-image: url("../images/basket.svg");
+    @include screen-max($mobile) {
+      width: 46px;
+      height: 46px;
+    }
+    &--page {
+      background-image: url("../images/products-list/basket-black.svg");
+      @include account-icons-page;
+    }
+    &-amount {
+      @include header-text-styles;
+      line-height: 20px;
+      font-size: 10px;
+      color: $white-color;
+      background-color: $sky-color;
+      min-width: 19px;
+      min-height: 19px;
+      border-radius: 42px;
+      padding: 0 8px;
+      position: absolute;
+      left: 41px;
+      top: -2px;
+      text-align: center;
+      @include screen-max($mobile) {
+        left: 33px;
+      }
+    }
+  }
 }

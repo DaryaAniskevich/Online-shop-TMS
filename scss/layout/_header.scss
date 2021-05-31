@@ -58,7 +58,7 @@
     }
   }
   &-burger {
-    margin-left: 20px;
+    margin-left: 10px;
     @include screen-max($mobile) {
       display: block;
     }
